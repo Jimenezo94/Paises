@@ -1,4 +1,17 @@
 import { url } from "./url.js";
+<<<<<<< HEAD
+import getDatos from "./getDatos.js";
+import { showData } from "./eventos.js";
+
+const card = document.querySelector("#ro");
+let selec = document.querySelector(".form-select");
+
+document.addEventListener('DOMContentLoaded', () =>{
+    const data = getDatos(url);
+    showData(data, card);
+});
+
+=======
 const card = document.querySelector("#ro");
 const card1 = document.querySelector("#ra");
 let selec = document.querySelector(".form-select");
@@ -76,12 +89,16 @@ boton.addEventListener('click', () => {
     }
 
 })
+>>>>>>> 904a7fcd3cc752ccf3a85312b3beb0d7b04b430c
 selec.addEventListener('click', async () => {
     const res = await fetch(url);
     const data = await res.json();
     let selec = document.querySelector("#selec").value;
     card.innerHTML = "";
+<<<<<<< HEAD
+=======
     console.log(selec)
+>>>>>>> 904a7fcd3cc752ccf3a85312b3beb0d7b04b430c
     if (selec == "Americas") {
         let mostar = data.filter(user => user.Region === selec)
         mostar.forEach(element => {
@@ -172,4 +189,8 @@ selec.addEventListener('click', async () => {
                         `
     })
  }
+<<<<<<< HEAD
+});
+=======
 })
+>>>>>>> 904a7fcd3cc752ccf3a85312b3beb0d7b04b430c
