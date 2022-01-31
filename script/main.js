@@ -13,7 +13,7 @@ const mostarDato = async () => {
         <div class="card" style="width: 18rem;">
          <img src="${image}" class="card-img-top" alt="">
          <div class="card-body">
-        <h3>${name}</h3>
+        <h1>${name}</h1>
         <h6 class="info">population: ${Population}</h6>
         <h6 class="info">region: ${Region}</h6>
         <h6 class="info">capital: ${capital}</h6>
@@ -90,7 +90,7 @@ selec.addEventListener('click', async () => {
                 <div class="card" style="width: 18rem;">
                                     <img src="${image}" class="card-img-top" alt="">
                                     <div class="card-body">
-                                        <h3>${name}</h3>
+                                        <h1>${name}</h1>
                                         <h6 class="info">population: ${Population}</h6>
                                         <h6 class="info">region: ${Region}</h6>
                                         <h6 class="info">capital: ${capital}</h6>
@@ -108,7 +108,7 @@ selec.addEventListener('click', async () => {
                 <div class="card" style="width: 18rem;">
                                     <img src="${image}" class="card-img-top" alt="">
                                     <div class="card-body">
-                                        <h3>${name}</h3>
+                                        <h1>${name}</h1>
                                         <h6 class="info">population: ${Population}</h6>
                                         <h6 class="info">region: ${Region}</h6>
                                         <h6 class="info">capital: ${capital}</h6>
@@ -126,7 +126,7 @@ selec.addEventListener('click', async () => {
                 <div class="card" style="width: 18rem;">
                                     <img src="${image}" class="card-img-top" alt="">
                                     <div class="card-body">
-                                        <h3>${name}</h3>
+                                        <h1>${name}</h1>
                                         <h6 class="info">population: ${Population}</h6>
                                         <h6 class="info">region: ${Region}</h6>
                                         <h6 class="info">capital: ${capital}</h6>
@@ -144,7 +144,7 @@ selec.addEventListener('click', async () => {
                 <div class="card" style="width: 18rem;">
                                     <img src="${image}" class="card-img-top" alt="">
                                     <div class="card-body">
-                                        <h3>${name}</h3>
+                                        <h1>${name}</h1>
                                         <h6 class="info">population: ${Population}</h6>
                                         <h6 class="info">region: ${Region}</h6>
                                         <h6 class="info">capital: ${capital}</h6>
@@ -162,7 +162,7 @@ selec.addEventListener('click', async () => {
                         <div class="card" style="width: 18rem;">
                                             <img src="${image}" class="card-img-top" alt="">
                                             <div class="card-body">
-                                                <h3>${name}</h3>
+                                                <h1>${name}</h1>
                                                 <h6 class="info">population: ${Population}</h6>
                                                 <h6 class="info">region: ${Region}</h6>
                                                 <h6 class="info">capital: ${capital}</h6>
