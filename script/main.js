@@ -166,6 +166,26 @@ button.addEventListener('click', async () => {
     const data = await res.json();
     data.forEach(element => {
         const { name, image, Population, Region, capital } = element;
-        staticBackdrop.innerHTML += ``
+        staticBackdrop.innerHTML += `<div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <img src="${image}" class="card-img-top" alt="">
+            <h1>${name}</h1>
+            <h6 class="info">population: ${Population}</h6>
+            <h6 class="info">region: ${Region}</h6>
+            <h6 class="info">capital: ${capital}</h6>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary"
+                    data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Understood</button>
+            </div>
+        </div>
+    </div>`
     })
 })
