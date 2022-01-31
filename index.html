@@ -30,26 +30,28 @@
         <div class="content1">
             <div class="buscar">
                 <div class="input-group">
-                    <input type="text" name="buscador" id="buscador" placeholder="Buscar..."  >
+                    <input type="text" class="form-control" placeholder="">
                 </div>
             </div>
             <div class="select1">
-                <select class="form-select form-select-lg mb-2" aria-label=".form-select-lg example">
-                    <option selected>Filter by Region</option>
-                    <option value="1">Africa</option>
-                    <option value="2">America</option>
-                    <option value="3">Asia</option>
-                    <option value="4">Europe</option>
-                    <option value="5">Oceania</option>
+                <select class="form-select form-select-lg mb-2" aria-label=".form-select-lg example" id="selec">
+                    <option value="0">filter by Region</option>
+                    <option value="Africa">Africa</option>
+                    <option value="Americas">America</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Europa">Europe</option>
+                    <option value="Oceania">Oceania</option>
                 </select>
             </div>
             <div class="content2">
                 <div id="card">
-                    <div class="row">
+                    <div class="row" id="ro">
                         
                     </div>
+                    <div class="row" id="ra">
+
+                    </div>
                 </div>
-                <div id="resultado"></div>
             </div>
         </div>
         <script src="./script/main.js" type="module"></script>
