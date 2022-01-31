@@ -1,41 +1,26 @@
 import { url } from "./url.js";
+import getDatos from "./getDatos.js";
+import { showData } from "./eventos.js";
 const card = document.querySelector("#ro");
-const card1 = document.querySelector("#ra");
+const staticBackdrop = document.querySelector("#staticBackdrop");
+
 let selec = document.querySelector(".form-select");
 
-const mostarDato = async () => {
-    const res = await fetch(url);
-    const dato = await res.json();
-    card.innerHTML = "";
-    dato.forEach(element => {
-        const { id, name, image, Population, Region, capital } = element;
-        card.innerHTML += `
-        <div class="card" style="width: 18rem;">
-         <img src="${image}" class="card-img-top" alt="">
-         <div class="card-body">
-        <h1>${name}</h1>
-        <h6 class="info">population: ${Population}</h6>
-        <h6 class="info">region: ${Region}</h6>
-        <h6 class="info">capital: ${capital}</h6>
-        <input id="${id}" class="btn btn-primary" type="submit" value="DETALLE">
-        </div>
-        </div>
-        `
-    })
-};
-document.addEventListener('DOMContentLoaded', mostarDato);
-
+document.addEventListener('DOMContentLoaded', () => {
+    const data = getDatos(url);
+    showData(data, card);
+});
 
 const res = await fetch(url);
 const dato2 = await res.json();
 document.addEventListener('keyup', autocompletado)
-function autocompletado () {
+function autocompletado() {
     card.innerHTML = ""
     let buscador = document.getElementById('buscador').value
-    dato2.forEach(function(pais) {
-        if (pais.name.toLowerCase().includes(buscador.toLowerCase()) ) {
-         const {id, name, image, Population, Region, capital} = pais;
-         card.innerHTML += `
+    dato2.forEach(function (pais) {
+        if (pais.name.toLowerCase().includes(buscador.toLowerCase())) {
+            const { id, name, image, Population, Region, capital } = pais;
+            card.innerHTML += `
          <div class="card" style="width: 18rem;">
                              <img src="${image}" class="card-img-top" alt="">
                              <div class="card-body">
@@ -43,39 +28,40 @@ function autocompletado () {
                                  <h6 class="info">population: ${Population}</h6>
                                  <h6 class="info">region: ${Region}</h6>
                                  <h6 class="info">capital: ${capital}</h6>
-                                 <input class="btn btn-primary" type="submit" value="Submit">
+                                 <input class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" type="submit" value="Submit">
                              </div>
                          </div>
          `
         }
-       
-      
+
+
     });
 }
 
 
 autocompletado()
- 
+
 
 //MODO OSCURO
 
- 
+
 const boton = document.querySelector('#boton');
 const prefresDarkScheme = window.matchMedia('(prefers-color-scheme: dark)')
 
 boton.addEventListener('click', () => {
-  
+
     if (prefresDarkScheme.matches) {
-        document.body.classList.toggle('light-theme')
-        document.card.classList.toggle('light-theme')
+        document.body.classList.toggle('light-theme');
+        document.card.classList.toggle('light-theme');
 
     } else {
-        document.body.classList.toggle('dark-theme')
-        document.card.classList.toggle('dark-theme')
+        document.body.classList.toggle('dark-theme');
+        document.card.classList.toggle('dark-theme');
 
     }
 
-})
+});
+
 selec.addEventListener('click', async () => {
     const res = await fetch(url);
     const data = await res.json();
@@ -94,7 +80,7 @@ selec.addEventListener('click', async () => {
                                         <h6 class="info">population: ${Population}</h6>
                                         <h6 class="info">region: ${Region}</h6>
                                         <h6 class="info">capital: ${capital}</h6>
-                                        <input id="${id}" class="btn btn-primary" type="submit" value="DETALLE">
+                                        <input id="${id}" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" type="submit" value="DETALLE">
                                     </div>
                                 </div>
                 `
@@ -112,7 +98,7 @@ selec.addEventListener('click', async () => {
                                         <h6 class="info">population: ${Population}</h6>
                                         <h6 class="info">region: ${Region}</h6>
                                         <h6 class="info">capital: ${capital}</h6>
-                                        <input id="${id}" class="btn btn-primary" type="submit" value="DETALLE">
+                                        <input id="${id}" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" type="submit" value="DETALLE">
                                     </div>
                                 </div>
                 `
@@ -130,7 +116,7 @@ selec.addEventListener('click', async () => {
                                         <h6 class="info">population: ${Population}</h6>
                                         <h6 class="info">region: ${Region}</h6>
                                         <h6 class="info">capital: ${capital}</h6>
-                                        <input id="${id}" class="btn btn-primary" type="submit" value="DETALLE">
+                                        <input id="${id}" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" type="submit" value="DETALLE">
                                     </div>
                                 </div>
                 `
@@ -148,7 +134,7 @@ selec.addEventListener('click', async () => {
                                         <h6 class="info">population: ${Population}</h6>
                                         <h6 class="info">region: ${Region}</h6>
                                         <h6 class="info">capital: ${capital}</h6>
-                                        <input id="${id}" class="btn btn-primary" type="submit" value="DETALLE">
+                                        <input id="${id}" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" type="submit" value="DETALLE">
                                     </div>
                                 </div>
                 `
@@ -158,7 +144,7 @@ selec.addEventListener('click', async () => {
     } if (selec == 0) {
         data.forEach(element => {
             const { id, name, image, Population, Region, capital } = element;
-                card.innerHTML += `
+            card.innerHTML += `
                         <div class="card" style="width: 18rem;">
                                             <img src="${image}" class="card-img-top" alt="">
                                             <div class="card-body">
@@ -166,10 +152,20 @@ selec.addEventListener('click', async () => {
                                                 <h6 class="info">population: ${Population}</h6>
                                                 <h6 class="info">region: ${Region}</h6>
                                                 <h6 class="info">capital: ${capital}</h6>
-                                                <input id="${id}" class="btn btn-primary" type="submit" value="DETALLE">
+                                                <input id="${id}" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" type="submit" value="DETALLE">
                                             </div>
                                         </div>
                         `
+        })
+    }
+});
+
+const button = document.querySelector(".btn-primary");
+button.addEventListener('click', async () => {
+    const res = await fetch(url);
+    const data = await res.json();
+    data.forEach(element => {
+        const { name, image, Population, Region, capital } = element;
+        staticBackdrop.innerHTML += ``
     })
- }
 })
