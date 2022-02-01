@@ -28,7 +28,8 @@ function autocompletado() {
                                  <h6 class="info">population: ${Population}</h6>
                                  <h6 class="info">region: ${Region}</h6>
                                  <h6 class="info">capital: ${capital}</h6>
-                                 <input class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" type="submit" value="Submit">
+                                 
+                                  <a href="#" id=${id} class="btn btn-outline-dark " style="background-color: #db7093;">Detail</a>
                              </div>
                          </div>
          `
@@ -38,9 +39,22 @@ function autocompletado() {
     });
 }
 
+const element = document.querySelector('.detalles');
 
-autocompletado()
+element.addEventListener('click', async(e) => {
 
+    const btnDetail = e.target.classList.contains('btn-outline-dark');
+    const id = e.target.id;
+
+    if(btnDetail){
+        console.log('Detail')
+         const lista = await getDatos(url);
+         const objeto = lista.find(list => list.id === Number(id))
+         localStorage.setItem("Detail",JSON.stringify(objeto));
+         window.location.href = "detail.html"
+    }
+
+})
 
 //MODO OSCURO
 
@@ -52,7 +66,7 @@ boton.addEventListener('click', () => {
 
     if (prefresDarkScheme.matches) {
         document.body.classList.toggle('light-theme');
-        document.card.classList.toggle('light-theme');
+        document.div.classList.toggle('light-theme');
 
     } else {
         document.body.classList.toggle('dark-theme');
@@ -160,32 +174,3 @@ selec.addEventListener('click', async () => {
     }
 });
 
-const button = document.querySelector(".btn-primary");
-button.addEventListener('click', async () => {
-    const res = await fetch(url);
-    const data = await res.json();
-    data.forEach(element => {
-        const { name, image, Population, Region, capital } = element;
-        staticBackdrop.innerHTML += `<div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                    aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-            <img src="${image}" class="card-img-top" alt="">
-            <h1>${name}</h1>
-            <h6 class="info">population: ${Population}</h6>
-            <h6 class="info">region: ${Region}</h6>
-            <h6 class="info">capital: ${capital}</h6>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary"
-                    data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Understood</button>
-            </div>
-        </div>
-    </div>`
-    })
-})

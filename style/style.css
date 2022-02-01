@@ -56,3 +56,25 @@
 .info{
     text-align: left !important;
 }
+.modal-container{
+    position:fixed;
+    z-index: 1000;
+    width: 100%;
+    height : 100hv;
+    top:0;
+    left:0;
+    background:rgb(0, 0, 0)(0,0,0,0);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal{
+    width: 40%; 
+    height: 50%;
+    background: fff;
+    text-align: center;display:flex;flex-direction:columns
+    
+}
+.modal > .icon {
+    height: 50%;
+}
