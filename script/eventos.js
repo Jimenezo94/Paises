@@ -10,7 +10,7 @@ export const showData = async(lista, card) =>{
         <h6 class="info">population: ${Population}</h6>
         <h6 class="info">region: ${Region}</h6>
         <h6 class="info">capital: ${capital}</h6>
-         <a href="#" id=${id} class="btn btn-outline-dark " style="background-color: #db7093;">Detail</a>
+         <a href="#" id=${id} class="btn btn-outline-dark " style="background-color: #F44336;">Detail</a>
        
         </div>
         </div>
