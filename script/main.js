@@ -27,9 +27,8 @@ function autocompletado() {
                                  <h1>${name}</h1>
                                  <h6 class="info">population: ${Population}</h6>
                                  <h6 class="info">region: ${Region}</h6>
-                                 <h6 class="info">capital: ${capital}</h6>
-                                 
-                                  <a href="#" id=${id} class="btn btn-outline-dark " style="background-color: #F44336;">Detail</a>
+                                <h6 class="info">capital: ${capital}</h6> 
+                                <a href="#" id=${id} class="btn btn-outline-dark" type="submit" >Detail</a>
                              </div>
                          </div>
          `
@@ -94,7 +93,7 @@ selec.addEventListener('click', async () => {
                                         <h6 class="info">population: ${Population}</h6>
                                         <h6 class="info">region: ${Region}</h6>
                                         <h6 class="info">capital: ${capital}</h6>
-                                        <input id="${id}" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" type="submit" value="DETALLE">
+                                        <a href="#" id=${id} class="btn btn-outline-dark" type="submit" >Detail</a>
                                     </div>
                                 </div>
                 `
@@ -112,7 +111,7 @@ selec.addEventListener('click', async () => {
                                         <h6 class="info">population: ${Population}</h6>
                                         <h6 class="info">region: ${Region}</h6>
                                         <h6 class="info">capital: ${capital}</h6>
-                                        <input id="${id}" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" type="submit" value="DETALLE">
+                                        <a href="#" id=${id} class="btn btn-outline-dark" type="submit" >Detail</a>
                                     </div>
                                 </div>
                 `
@@ -130,7 +129,7 @@ selec.addEventListener('click', async () => {
                                         <h6 class="info">population: ${Population}</h6>
                                         <h6 class="info">region: ${Region}</h6>
                                         <h6 class="info">capital: ${capital}</h6>
-                                        <input id="${id}" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" type="submit" value="DETALLE">
+                                        <a href="#" id=${id} class="btn btn-outline-dark" type="submit" >Detail</a>
                                     </div>
                                 </div>
                 `
@@ -148,7 +147,7 @@ selec.addEventListener('click', async () => {
                                         <h6 class="info">population: ${Population}</h6>
                                         <h6 class="info">region: ${Region}</h6>
                                         <h6 class="info">capital: ${capital}</h6>
-                                        <input id="${id}" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" type="submit" value="DETALLE">
+                                        <a href="#" id=${id} class="btn btn-outline-dark" type="submit" >Detail</a>
                                     </div>
                                 </div>
                 `
@@ -166,7 +165,7 @@ selec.addEventListener('click', async () => {
                                                 <h6 class="info">population: ${Population}</h6>
                                                 <h6 class="info">region: ${Region}</h6>
                                                 <h6 class="info">capital: ${capital}</h6>
-                                                <input id="${id}" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" type="submit" value="DETALLE">
+                                                <a href="#" id=${id} class="btn btn-outline-dark" type="submit" >Detail</a>
                                             </div>
                                         </div>
                         `

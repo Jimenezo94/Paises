@@ -6,7 +6,8 @@
              "Population": 81.770900,
              "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/800px-Flag_of_Germany.svg.png",
              "Region": "Europa",
-             "capital": "Berlin"
+             "capital": "Berlin",
+             "detalle": "Alemania es un país de Europa occidental con un paisaje de bosques, ríos, cadenas montañosas y playas en el mar del Norte. Tiene más de 2 milenios de historia. Berlín, su capital, cuenta con sitios de arte y vida nocturna, la Puerta de Brandeburgo y muchos sitios relacionados con la Segunda Guerra Mundial. Múnich es conocida por el Oktoberfest y los salones de la cerveza, incluido el Hofbräuhaus del siglo XVI. Fráncfort, con sus rascacielos, alberga el Banco Central Europeo."
          },
          {
             "id":2,
@@ -14,7 +15,8 @@
             "Population": 323.947000,
             "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1200px-Flag_of_the_United_States.svg.png",
             "Region": "Americas",
-            "capital": "Washington D.C."
+            "capital": "Washington D.C.",
+            "detalle": "Estados Unidos es un país de 50 estados que ocupa una extensa franja de América del Norte, con Alaska en el noroeste y Hawái que extiende la presencia del país en el océano Pacífico. Entre las principales ciudades de la costa del Atlántico, se encuentran Nueva York, un centro global financiero y cultural, y la capital Washington D. C. Chicago, metrópolis del medio oeste, es famosa por su influencia arquitectónica y, en la costa oeste, Hollywood, Los Ángeles, es famosa por la industria cinematográfica."
          },
          {
             "id":3,
@@ -22,7 +24,8 @@
             "Population": 206.135893,
             "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/640px-Flag_of_Brazil.svg.png",
             "Region": "Americas",
-            "capital": "Brasilia"
+            "capital": "Brasilia",
+            "detalle": "Brasil es un vasto país de Sudamérica que se extiende desde la Cuenca del Amazonas en el norte hasta los viñedos y las enormes cataratas del Iguazú en el sur. Río de Janeiro, simbolizado por su estatua de 38 m del Cristo Redentor sobre el cerro del Corcovado, es famoso por sus ajetreadas playas Copacabana e Ipanema, junto con su enorme y estridente festival del Carnaval, que cuenta con carros alegóricos, exuberantes disfraces y danza y música samba."
          },
          {
         
@@ -31,7 +34,8 @@
                 "Population": 334.300,
                 "image":"https://st.depositphotos.com/1610517/3441/i/600/depositphotos_34412777-stock-photo-iceland-flag-blowing-in-the.jpg",
                 "Region": "Europe",
-                "capital": "Reykjavik"
+                "capital": "Reykjavik",
+                "detalle": "Islandia es un país insular nórdico que se caracteriza por su espectacular paisaje con volcanes, géiseres, termas y campos de lava. Cuenta con enormes glaciares protegidos en los parques nacionales de Vatnajökull y Snæfellsjökull. La mayoría de la población vive en la capital, Reikiavik, que se abastece de energía geotérmica y alberga el Museo Nacional y el Museo de Saga, que recorren la historia vikinga de Islandia."
          },
          {
              "id":5,
@@ -39,7 +43,8 @@
              "Population": 27.657147,
              "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuH1COzWsFE48ucV2iNBB58mNUeBiRqW_KlrScYfwD8Fg4cn_JU5pxQtPxfiJR8oXAenU&usqp=CAU",
              "Region": "Asia",
-             "capital": "Kabul"
+             "capital": "Kabul",
+             "detalle": "Afganistán, oficialmente el Emirato Islámico de Afganistán, ​ es una región y un país montañoso sin salida al mar ubicado en Asia. Limita con Pakistán al sur y al este, con Irán al oeste, con Turkmenistán, Uzbekistán y Tayikistán al norte, y con China al noreste a través del corredor de Waján.​​"
          },
          {
             "id":6,
@@ -47,14 +52,16 @@
             "Population": 27.657147,
             "image":"https://upload.wikimedia.org/wikipedia/commons/e/e1/Flag_of_%C3%85land_%283-2%29.svg",
             "Region": "Europe",
-            "capital": "Mariehamn"
+            "capital": "Mariehamn",
+            "detalle": "Las islas Aland​​ ​​ son un archipiélago y provincia autónoma de Finlandia situado en el mar Báltico, entre Suecia y Finlandia. La población de las islas era de 28 983 habitantes a 31 de diciembre de 2015, ​ de los cuales 11 461 viven en la capital, Mariehamn."
          },
          {  "id":7,
             "name":"Albania",
             "Population": 2.886026,
             "image":"https://www.lifeder.com/wp-content/uploads/2018/07/bandera-de-Albania-imagen-1024x612.jpg",
             "Region": "Europe",
-            "capital": "Tirana"
+            "capital": "Tirana",
+            "detalle": "Albania, en el sureste de la península balcánica europea, es un país pequeño con costas en los mares Adriático y Jónico. Los Alpes albaneses cruzan su interior. El país tiene varios castillos y sitios arqueológicos. La capital Tirana se centra en la creciente Plaza Skanderbeg, lugar del Museo histórico nacional, con exposiciones que abarcan desde la antigüedad al poscomunismo, y la Mezquita Et'hem Bey pintada al fresco."
          },
          {
             "id":8,
@@ -62,7 +69,8 @@
             "Population": 40.400000,
             "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Flag_of_Algeria.svg/1200px-Flag_of_Algeria.svg.png",
             "Region": "Africa",
-            "capital": "Algiers"
+            "capital": "Algiers",
+            "detalle": "Argelia es un país de África del Norte con una costa en el Mediterráneo y un interior en el desierto del Sahara. Muchos imperios dejaron su legado aquí, como las antiguas ruinas romanas en Tipasa, junto al mar. En la capital, Argel, los sitios icónicos otomanos como la Mezquita Ketchaoua, de alrededor de 1612, bordean el barrio Casba en la ladera de un cerro, con sus angostos pasajes y escaleras. La basílica neobizantina de la ciudad, Nuestra Señora de África, data del régimen colonial francés. "
          }
         
      ]

@@ -58,10 +58,51 @@ img{
 .modal{
     width: 40%; 
     height: 50%;
-    background: fff;
+    background: #fff;
     text-align: center;display:flex;flex-direction:columns
-    
 }
 .modal > .icon {
     height: 50%;
+}
+#card{
+    margin: 10px;
+}
+.card1{
+    margin: auto !important;
+    background: rgb(255, 255, 255) !important;
+    border: 3px solid rgba(29, 29, 29, 0.144) !important;
+    border-radius: 15px !important;
+    text-align: center !important;
+    width: 55% !important;
+}
+.card-body{
+    color: rgb(6, 3, 26) !important;
+    text-align: initial;
+}
+.card-body h1{
+    text-align: center !important;
+}
+.bt{
+    border: 2px solid rgb(1, 1, 41);
+    border-radius: 10px;
+    width: 150px;
+    height: 40px;
+    color: white;
+    background: rgb(25, 2, 70);
+    font-size: 20px;
+    line-height: 1px;
+}
+.bt:hover{
+    border: 5px solid rgb(2, 2, 100);
+    background: white;
+    color: purple;
+}
+.col-12 #boto{
+    margin-left: 43% !important;
+}
+.list-group{
+    margin: 18px !important;
+}
+.card img{
+    border-radius: 10px !important;
 }
